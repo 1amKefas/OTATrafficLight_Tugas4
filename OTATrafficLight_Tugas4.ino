@@ -65,14 +65,14 @@ void loop() {
   // DURASI AWAL (4-2-4) -> Biar lu bisa liat bedanya pas di-update
   if (state == 0) {
     digitalWrite(pinMerah, HIGH); digitalWrite(pinKuning, LOW); digitalWrite(pinHijau, LOW);
-    if (currentMillis - prevMillis >= 4000) { prevMillis = currentMillis; state = 1; }
+    if (currentMillis - prevMillis >= 1000) { prevMillis = currentMillis; state = 1; }
   } 
   else if (state == 1) {
     digitalWrite(pinMerah, LOW); digitalWrite(pinKuning, HIGH); digitalWrite(pinHijau, LOW);
-    if (currentMillis - prevMillis >= 2000) { prevMillis = currentMillis; state = 2; }
+    if (currentMillis - prevMillis >= 1000) { prevMillis = currentMillis; state = 2; }
   } 
   else if (state == 2) {
     digitalWrite(pinMerah, LOW); digitalWrite(pinKuning, LOW); digitalWrite(pinHijau, HIGH);
-    if (currentMillis - prevMillis >= 4000) { prevMillis = currentMillis; state = 0; }
+    if (currentMillis - prevMillis >= 1000) { prevMillis = currentMillis; state = 0; }
   }
 }
