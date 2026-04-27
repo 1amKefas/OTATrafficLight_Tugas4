@@ -7,7 +7,7 @@ const char* ssid = "PUT312";
 const char* password = "pnjpnjpnj";  
 
 // Link Direct RAW GitHub yang bener:
-const String firmware_url = "https://raw.githubusercontent.com/1amKefas/OTATrafficLight_Tugas4/main/TrafficLightModule_Tugas4.ino.bin";
+const String firmware_url = "https://raw.githubusercontent.com/1amKefas/OTATrafficLight_Tugas4/main/OTATrafficLight_Tugas4.ino.bin";
 
 // Pin Traffic Light 
 const int pinMerah = 21;
