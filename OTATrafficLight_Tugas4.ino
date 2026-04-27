@@ -30,15 +30,15 @@ void codeLampu(void * parameter) {
     
     // Merah Nyala (Contoh 1000 ms)
     digitalWrite(pinMerah, HIGH); digitalWrite(pinKuning, LOW); digitalWrite(pinHijau, LOW);
-    vTaskDelay(10000 / portTICK_PERIOD_MS); 
+    vTaskDelay(1000 / portTICK_PERIOD_MS); 
     
     // Kuning Nyala (Contoh 1000 ms)
     digitalWrite(pinMerah, LOW); digitalWrite(pinKuning, HIGH); digitalWrite(pinHijau, LOW);
-    vTaskDelay(5000 / portTICK_PERIOD_MS); 
+    vTaskDelay(1000 / portTICK_PERIOD_MS); 
     
     // Hijau Nyala (Contoh 1000 ms)
     digitalWrite(pinMerah, LOW); digitalWrite(pinKuning, LOW); digitalWrite(pinHijau, HIGH);
-    vTaskDelay(10000 / portTICK_PERIOD_MS); 
+    vTaskDelay(1000 / portTICK_PERIOD_MS); 
   }
 }
 
