@@ -41,56 +41,56 @@ void codeLampu(void * parameter) {
     digitalWrite(pinMerah2, HIGH); digitalWrite(pinKuning2, LOW); digitalWrite(pinHijau2, LOW);
     digitalWrite(pinMerah3, HIGH); digitalWrite(pinKuning3, LOW); digitalWrite(pinHijau3, LOW);
     digitalWrite(pinMerah4, HIGH); digitalWrite(pinKuning4, LOW); digitalWrite(pinHijau4, LOW);
-    vTaskDelay(1000 / portTICK_PERIOD_MS); 
+    vTaskDelay(4000 / portTICK_PERIOD_MS); 
 
     // FASE 2: TRANSISI (UTARA KUNING, TIMUR KUNING)
     digitalWrite(pinMerah1, LOW); digitalWrite(pinKuning1, HIGH); digitalWrite(pinHijau1, LOW); 
     digitalWrite(pinMerah2, LOW); digitalWrite(pinKuning2, HIGH); digitalWrite(pinHijau2, LOW); 
     digitalWrite(pinMerah3, HIGH); digitalWrite(pinKuning3, LOW); digitalWrite(pinHijau3, LOW);
     digitalWrite(pinMerah4, HIGH); digitalWrite(pinKuning4, LOW); digitalWrite(pinHijau4, LOW);
-    vTaskDelay(1000 / portTICK_PERIOD_MS); 
+    vTaskDelay(2000 / portTICK_PERIOD_MS); 
 
     // FASE 3: TIMUR HIJAU
     digitalWrite(pinMerah1, HIGH); digitalWrite(pinKuning1, LOW); digitalWrite(pinHijau1, LOW); 
     digitalWrite(pinMerah2, LOW); digitalWrite(pinKuning2, LOW); digitalWrite(pinHijau2, HIGH); 
     digitalWrite(pinMerah3, HIGH); digitalWrite(pinKuning3, LOW); digitalWrite(pinHijau3, LOW);
     digitalWrite(pinMerah4, HIGH); digitalWrite(pinKuning4, LOW); digitalWrite(pinHijau4, LOW);
-    vTaskDelay(1000 / portTICK_PERIOD_MS); 
+    vTaskDelay(4000 / portTICK_PERIOD_MS); 
 
     // FASE 4: TRANSISI (TIMUR KUNING, SELATAN KUNING)
     digitalWrite(pinMerah1, HIGH); digitalWrite(pinKuning1, LOW); digitalWrite(pinHijau1, LOW);
     digitalWrite(pinMerah2, LOW); digitalWrite(pinKuning2, HIGH); digitalWrite(pinHijau2, LOW); 
     digitalWrite(pinMerah3, LOW); digitalWrite(pinKuning3, HIGH); digitalWrite(pinHijau3, LOW); 
     digitalWrite(pinMerah4, HIGH); digitalWrite(pinKuning4, LOW); digitalWrite(pinHijau4, LOW);
-    vTaskDelay(1000 / portTICK_PERIOD_MS); 
+    vTaskDelay(2000 / portTICK_PERIOD_MS); 
 
     // FASE 5: SELATAN HIJAU
     digitalWrite(pinMerah1, HIGH); digitalWrite(pinKuning1, LOW); digitalWrite(pinHijau1, LOW);
     digitalWrite(pinMerah2, HIGH); digitalWrite(pinKuning2, LOW); digitalWrite(pinHijau2, LOW); 
     digitalWrite(pinMerah3, LOW); digitalWrite(pinKuning3, LOW); digitalWrite(pinHijau3, HIGH); 
     digitalWrite(pinMerah4, HIGH); digitalWrite(pinKuning4, LOW); digitalWrite(pinHijau4, LOW);
-    vTaskDelay(1000 / portTICK_PERIOD_MS); 
+    vTaskDelay(4000 / portTICK_PERIOD_MS); 
 
     // FASE 6: TRANSISI (SELATAN KUNING, BARAT KUNING)
     digitalWrite(pinMerah1, HIGH); digitalWrite(pinKuning1, LOW); digitalWrite(pinHijau1, LOW);
     digitalWrite(pinMerah2, HIGH); digitalWrite(pinKuning2, LOW); digitalWrite(pinHijau2, LOW);
     digitalWrite(pinMerah3, LOW); digitalWrite(pinKuning3, HIGH); digitalWrite(pinHijau3, LOW); 
     digitalWrite(pinMerah4, LOW); digitalWrite(pinKuning4, HIGH); digitalWrite(pinHijau4, LOW); 
-    vTaskDelay(1000 / portTICK_PERIOD_MS); 
+    vTaskDelay(2000 / portTICK_PERIOD_MS); 
 
     // FASE 7: BARAT HIJAU
     digitalWrite(pinMerah1, HIGH); digitalWrite(pinKuning1, LOW); digitalWrite(pinHijau1, LOW);
     digitalWrite(pinMerah2, HIGH); digitalWrite(pinKuning2, LOW); digitalWrite(pinHijau2, LOW);
     digitalWrite(pinMerah3, HIGH); digitalWrite(pinKuning3, LOW); digitalWrite(pinHijau3, LOW); 
     digitalWrite(pinMerah4, LOW); digitalWrite(pinKuning4, LOW); digitalWrite(pinHijau4, HIGH); 
-    vTaskDelay(1000 / portTICK_PERIOD_MS); 
+    vTaskDelay(4000 / portTICK_PERIOD_MS); 
 
     // FASE 8: TRANSISI (BARAT KUNING, UTARA KUNING)
     digitalWrite(pinMerah1, LOW); digitalWrite(pinKuning1, HIGH); digitalWrite(pinHijau1, LOW); 
     digitalWrite(pinMerah2, HIGH); digitalWrite(pinKuning2, LOW); digitalWrite(pinHijau2, LOW);
     digitalWrite(pinMerah3, HIGH); digitalWrite(pinKuning3, LOW); digitalWrite(pinHijau3, LOW);
     digitalWrite(pinMerah4, LOW); digitalWrite(pinKuning4, HIGH); digitalWrite(pinHijau4, LOW); 
-    vTaskDelay(1000 / portTICK_PERIOD_MS); 
+    vTaskDelay(2000 / portTICK_PERIOD_MS); 
   }
 }
 
